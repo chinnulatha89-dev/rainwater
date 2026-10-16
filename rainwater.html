@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RainWise | Rainwater Harvesting</title>
+
+    <link rel="stylesheet" href="rainwater.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">💧 RainWise</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#learn">Learn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Every Roof Can <span>Harvest Rainwater!</span></h1>
+
+            <p>
+                Discover how much rainwater your household can collect
+                and learn how rainwater harvesting helps conserve water.
+            </p>
+
+            <a href="#calculator" class="btn">
+                Calculate Rainwater
+            </a>
+        </div>
+
+        <div class="hero-icon">🌧️🏠💧</div>
+    </section>
+
+    <section class="calculator-section" id="calculator">
+        <h2>Rainwater Collection Calculator</h2>
+
+        <p class="section-description">
+            Enter your roof area and average annual rainfall
+            to estimate your rainwater collection potential.
+        </p>
+
+        <div class="calculator">
+
+            <div class="input-group">
+                <label for="roofArea">Roof Area (square metres)</label>
+                <input
+                    type="number"
+                    id="roofArea"
+                    min="1"
+                    step="any"
+                    value="100"
+                    placeholder="Enter roof area"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="rainfall">Average Annual Rainfall (mm)</label>
+                <input
+                    type="number"
+                    id="rainfall"
+                    min="1"
+                    step="any"
+                    value="800"
+                    placeholder="Enter annual rainfall"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="efficiency">Collection Efficiency</label>
+                <select id="efficiency">
+                    <option value="0.60">60% - Conservative</option>
+                    <option value="0.75" selected>75% - Typical estimate</option>
+                    <option value="0.85">85% - Efficient system</option>
+                    <option value="1">100% - Theoretical maximum</option>
+                </select>
+            </div>
+
+            <button class="btn calculate-btn" id="calculateBtn">
+                Calculate
+            </button>
+
+            <button class="btn reset-btn" id="resetBtn">
+                Reset
+            </button>
+
+            <div class="result" aria-live="polite">
+                <h3>Estimated Rainwater Collection</h3>
+
+                <p id="annualResult" class="result-number">
+                    60,000 Litres
+                </p>
+
+                <p id="monthlyResult">
+                    Monthly average: 5,000 Litres
+                </p>
+
+                <p id="efficiencyResult">
+                    Collection efficiency: 75%
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="learn-section" id="learn">
+        <h2>What Is Rainwater Harvesting?</h2>
+
+        <p class="section-description">
+            Rainwater harvesting is the process of collecting and
+            storing rainwater for future use instead of allowing
+            all of it to flow away.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="card-icon">💧</div>
+                <h3>Save Water</h3>
+                <p>
+                    Collect rainwater to reduce dependence on
+                    treated water for suitable household uses.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🌱</div>
+                <h3>Protect Nature</h3>
+                <p>
+                    Thoughtful rainwater management can help
+                    conserve water resources and manage runoff.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🏠</div>
+                <h3>Use Your Roof</h3>
+                <p>
+                    A rooftop, gutters, filters, and a storage
+                    tank can help collect useful rainwater.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="steps-section">
+        <h2>How Rainwater Harvesting Works</h2>
+
+        <div class="steps">
+
+            <div class="step">
+                <span>1</span>
+                <h3>Collect</h3>
+                <p>Rain falls onto the roof.</p>
+            </div>
+
+            <div class="step">
+                <span>2</span>
+                <h3>Channel</h3>
+                <p>Gutters direct the water into pipes.</p>
+            </div>
+
+            <div class="step">
+                <span>3</span>
+                <h3>Filter and Store</h3>
+                <p>Filter debris and store water safely.</p>
+            </div>
+
+            <div class="step">
+                <span>4</span>
+                <h3>Reuse</h3>
+                <p>Use water for suitable purposes.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>💧 RainWise | Every Drop Counts</p>
+        <p>Learn today. Conserve water for tomorrow.</p>
+    </footer>
+
+    <script src="rainwater.js"></script>
+
+</body>
+</html>
